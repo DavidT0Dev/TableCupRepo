@@ -7,7 +7,7 @@ public class ManagerLocator : MonoBehaviour
 
     public static ManagerLocator Instance {get; private set;}
 
-
+    public RuneManager runeManager;
 
     private void Awake()
     {
