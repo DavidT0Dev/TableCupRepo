@@ -9,23 +9,29 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpForce;
     private Rigidbody myRB;
-    private Collider myCol;
+    private BoxCollider myCol;
+    private Animator anim;
+    private SpriteRenderer playerSprite;
     private float moveX;
     private float moveY;
     private bool grounded;
+    private bool isFacingRight = true;
     
 
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody>();
-        myCol = GetComponent<Collider>();
+        myCol = GetComponent<BoxCollider>();
+        anim = GetComponent<Animator>();
+        playerSprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckForInput();
+        HandlePlayerAnimation();
     }
 
     private void FixedUpdate()
@@ -37,6 +43,19 @@ public class PlayerMovement : MonoBehaviour
         moveX = joystick.Horizontal;
         moveY = joystick.Vertical;
         grounded = IsGrounded();
+    }
+
+    void HandlePlayerAnimation(){
+        if((moveX > .01 || moveX < -.01) && (myRB.velocity.y < .01 && myRB.velocity.y > -.01)){
+            anim.SetBool("Running", true);
+        }else{
+            anim.SetBool("Running", false);
+        }
+
+        if((isFacingRight && moveX < 0) || !isFacingRight && moveX > 0){
+            playerSprite.flipX = !playerSprite.flipX;
+            isFacingRight = !isFacingRight;
+        }
     }
 
     void MovePlayer(){
@@ -62,8 +81,6 @@ public class PlayerMovement : MonoBehaviour
         if(moveY >= .5f && grounded){
             Jump();
         }
-
-
     }
 
     void Jump(){
