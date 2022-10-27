@@ -26,7 +26,7 @@ public class RuneFragmentBehaviour : MonoBehaviour
     {
         Debug.Log("Rune fragment collected");
 
-        runeManager.RuneCaptured(this);
+        runeManager.RuneCaptured(fragmentSprite);
         Destroy(this.gameObject);
         Destroy(this);
     }
