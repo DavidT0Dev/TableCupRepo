@@ -56,6 +56,18 @@ public class PlayerMovement : MonoBehaviour
             playerSprite.flipX = !playerSprite.flipX;
             isFacingRight = !isFacingRight;
         }
+
+        if(myRB.velocity.y > .1){
+            anim.SetBool("Jumping", true);
+            anim.SetBool("Falling", false);
+        }else if(myRB.velocity.y < -.1){
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", true);
+        }else{
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", false);
+        }
+        
     }
 
     void MovePlayer(){
