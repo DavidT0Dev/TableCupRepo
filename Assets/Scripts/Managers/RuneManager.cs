@@ -46,7 +46,7 @@ public class RuneManager : MonoBehaviour
         RuneFragmentPrefabsLevel1 = new List<GameObject>();
 
         collectedRuneSpritesL1 = new List<Sprite>();
-
+            
         RuneScreenPositions = new List<Vector2>();
         RuneScreenPositions.Add(new Vector2(0f - 200f, 0f + 400f));
     }
