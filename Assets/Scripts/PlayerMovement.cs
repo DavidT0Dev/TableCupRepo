@@ -97,6 +97,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump(){
         myRB.velocity = new Vector3(myRB.velocity.x, jumpForce, 0);
+
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
     }
 
     //Performs a simple raycast ground check
