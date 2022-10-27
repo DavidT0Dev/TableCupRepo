@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5065162936115772807}
   - component: {fileID: 8314563876666108549}
   - component: {fileID: 304405028002576455}
+  - component: {fileID: 44968886}
   m_Layer: 0
   m_Name: RuneFragmentPrefab
   m_TagString: Untagged
@@ -91,11 +92,23 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877393160664212793}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &44968886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877393160664212793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9bd1a963ede294490ce9d8f2c5e939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8105298087517106018
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8105298087517106018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2097012, y: -1.2794561, z: -4.0960627}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2395445672196927333}
@@ -167,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97cc0253a95981549baf149d3426d8d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a44f2e9a2fa56334d998578e250b6b87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

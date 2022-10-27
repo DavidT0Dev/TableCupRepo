@@ -9,6 +9,8 @@ public class RuneManager : MonoBehaviour
     /// In charge of all rune and grimoire related
     /// </summary>
 
+    public Canvas playerScreen;
+
     public enum ENUM_RuneType
     {
         ENERGY,
@@ -40,6 +42,8 @@ public class RuneManager : MonoBehaviour
     {
         //collectedRunes = new List<ENUM_RuneType>();
         //collectedGrimoires = new List<ENUM_GrimoireType>();
+
+        //playerScreen = GameObject.Find("Canvas").GetComponent<>;
 
         RuneFragmentPrefabsLevel1 = new List<GameObject>();
     }

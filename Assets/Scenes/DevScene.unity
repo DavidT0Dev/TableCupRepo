@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1826885, g: 0.22839808, b: 0.30711174, a: 1}
+  m_IndirectSpecularColor: {r: 0.18268828, g: 0.22839771, b: 0.30711114, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -182,18 +182,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8528922578269860585, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8528922578269860585, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8528922578269860585, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
 --- !u!1 &44968884 stripped
@@ -206,18 +194,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2395445672196927333, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
   m_PrefabInstance: {fileID: 44968883}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &44968886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44968884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9bd1a963ede294490ce9d8f2c5e939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &50934035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a9d64f8b2130b4b9fb291b0cacbdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScreen: {fileID: 0}
   RuneFragmentPrefabsLevel1: []
   PlayerCanvas: {fileID: 0}
   collectedRunes: 
@@ -3222,7 +3199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1263477990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,6 +3212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a9d64f8b2130b4b9fb291b0cacbdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScreen: {fileID: 0}
   RuneFragmentPrefabsLevel1:
   - {fileID: 44968884}
   PlayerCanvas: {fileID: 0}
@@ -3248,7 +3226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263477989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.17, y: 1.52, z: 0}
+  m_LocalPosition: {x: 1.26, y: 1.49, z: 14.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 44968885}
