@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float moveX;
     private float moveY;
     private bool grounded;
-    private bool isFacingRight = true;
+    public bool isFacingRight;
     
 
     // Start is called before the first frame update
