@@ -6,14 +6,14 @@ public class RuneFragmentBehaviour : MonoBehaviour
 {
     RuneManager runeManager;
 
-    int whichLevelLocated;
-    Sprite fragmentSprite;
+    [SerializeField] public GameObject relatedSprite;
+
+   
 
     // Start is called before the first frame update
     void Start()
     {
         runeManager = GameObject.Find("RuneManager").GetComponent<RuneManager>();
-        fragmentSprite = GetComponentInChildren<SpriteRenderer>().sprite;
     }
 
     // Update is called once per frame
@@ -24,10 +24,8 @@ public class RuneFragmentBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Rune fragment collected");
-
-        runeManager.RuneCaptured(fragmentSprite);
+        Debug.Log("Runastic!");
+        relatedSprite.SetActive(true);
         Destroy(this.gameObject);
-        Destroy(this);
     }
 }
