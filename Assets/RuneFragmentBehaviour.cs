@@ -24,8 +24,17 @@ public class RuneFragmentBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        StartCoroutine(RuneCollected());
+    }
+
+    public IEnumerator RuneCollected()
+    {
         Debug.Log("Runastic!");
+        Animator anim = GetComponent<Animator>();
+        anim.enabled = true;
+        yield return new WaitForSeconds(0.4f);
         relatedSprite.SetActive(true);
         Destroy(this.gameObject);
+        
     }
 }
