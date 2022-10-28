@@ -8,6 +8,8 @@ public class CustomSceneManager : MonoBehaviour
 
     public static CustomSceneManager Instance { get; private set; }
 
+    private Animator Fader;
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -26,7 +28,7 @@ public class CustomSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Fader = GameObject.Find("Fader").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,16 @@ public class CustomSceneManager : MonoBehaviour
 
     public void LoadSceneName(string sceneName)
     {
+        Fader.SetTrigger("FadeIn");
+        Fader.gameObject.SetActive(false);
+        //StartCoroutine(Waiter());
         SceneManager.LoadScene(sceneName);
+        Fader.gameObject.SetActive(true);
+        Fader.SetTrigger("FadeOut");
     }
+
+    //public IEnumerator Waiter()
+    //{
+    //    yield return new WaitForSecondsRealtime(10);
+    //}
 }
