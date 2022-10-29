@@ -6,37 +6,28 @@ public class RuneFragmentBehaviour : MonoBehaviour
 {
     RuneManager runeManager;
 
-    [SerializeField] public GameObject relatedSprite;
-
-    public SpriteRenderer toDestroy;
+    int whichLevelLocated;
+    Sprite fragmentSprite;
 
     // Start is called before the first frame update
     void Start()
     {
         runeManager = GameObject.Find("RuneManager").GetComponent<RuneManager>();
+        fragmentSprite = GetComponentInChildren<SpriteRenderer>().sprite;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        (toDestroy as SpriteRenderer).sprite = null;
-        StartCoroutine(RuneCollected());
-    }
+        Debug.Log("Rune fragment collected");
 
-    public IEnumerator RuneCollected()
-    {
-        Debug.Log("Runastic!");
-        Animator anim = GetComponent<Animator>();
-
-        anim.enabled = true;
-        yield return new WaitForSeconds(0.4f);
-        relatedSprite.SetActive(true);
+        runeManager.RuneCaptured(fragmentSprite);
         Destroy(this.gameObject);
-
+        Destroy(this);
     }
 }
