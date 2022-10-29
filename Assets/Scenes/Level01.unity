@@ -2691,14 +2691,6 @@ PrefabInstance:
       propertyPath: relatedSprite
       value: 
       objectReference: {fileID: 1729369}
-    - target: {fileID: 1222333173299071744, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1222333173299071744, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1877393160664212793, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
       propertyPath: m_Name
       value: RuneFragmentPrefab
@@ -2745,10 +2737,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2395445672196927333, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6223608370467886541, guid: 5d04dac37ab1dca47aaa50248c934e71, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
