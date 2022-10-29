@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float moveY;
     private bool grounded;
     public bool isFacingRight;
+
     
 
     // Start is called before the first frame update
@@ -92,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(moveY >= .5f && grounded){
             Jump();
+           
         }
     }
 
