@@ -10,20 +10,20 @@ public class CustomSceneManager : MonoBehaviour
 
     private Animator Fader;
 
-    private void Awake()
-    {
-        // If there is an instance, and it's not me, delete myself.
+    //private void Awake()
+    //{
+    //    // If there is an instance, and it's not me, delete myself.
 
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
+    //    if (Instance != null && Instance != this)
+    //    {
+    //        Destroy(this);
+    //    }
+    //    else
+    //    {
+    //        Instance = this;
+    //        DontDestroyOnLoad(gameObject);
+    //    }
+    //}
 
     // Start is called before the first frame update
     void Start()
