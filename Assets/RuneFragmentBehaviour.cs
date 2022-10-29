@@ -8,7 +8,7 @@ public class RuneFragmentBehaviour : MonoBehaviour
 
     [SerializeField] public GameObject relatedSprite;
 
-   
+    public SpriteRenderer toDestroy;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +19,12 @@ public class RuneFragmentBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        (toDestroy as SpriteRenderer).sprite = null;
         StartCoroutine(RuneCollected());
     }
 
@@ -31,10 +32,11 @@ public class RuneFragmentBehaviour : MonoBehaviour
     {
         Debug.Log("Runastic!");
         Animator anim = GetComponent<Animator>();
+
         anim.enabled = true;
         yield return new WaitForSeconds(0.4f);
         relatedSprite.SetActive(true);
         Destroy(this.gameObject);
-        
+
     }
 }
