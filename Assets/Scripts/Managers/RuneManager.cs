@@ -62,6 +62,7 @@ public class RuneManager : MonoBehaviour
         Debug.Log("RuneManager got rune");
         collectedRuneSpritesL1.Add(runeSprite);
         AddRuneToCanvas(runeSprite);
+        
 
     }
 

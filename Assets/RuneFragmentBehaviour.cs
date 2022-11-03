@@ -26,6 +26,9 @@ public class RuneFragmentBehaviour : MonoBehaviour
     {
         (toDestroy as SpriteRenderer).sprite = null;
         StartCoroutine(RuneCollected());
+        
+        
+
     }
 
     public IEnumerator RuneCollected()

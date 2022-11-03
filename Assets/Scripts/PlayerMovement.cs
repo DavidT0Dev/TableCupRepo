@@ -93,12 +93,16 @@ public class PlayerMovement : MonoBehaviour
 
         if(moveY >= .5f && grounded){
             Jump();
-           
+            var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
         }
     }
 
     void Jump(){
         myRB.velocity = new Vector3(myRB.velocity.x, jumpForce, 0);
+
+        
+
     }
 
     //Performs a simple raycast ground check
