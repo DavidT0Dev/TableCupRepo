@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b028d06388efd2d438035d591d676073
+  - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: a09367547c05e1742b48f202feb11aad
+  - enabled: 0
+    path: Assets/Scenes/Level2.unity
+    guid: 7438874ed34edfb4d996d225a406fb1e
+  - enabled: 0
+    path: Assets/Scenes/Level3.unity
+    guid: 8533bb8c4d94d8a4a9ae0f10b06f017c
+  - enabled: 0
+    path: Assets/Scenes/EndingScene.unity
+    guid: 7506f3eb4b82c2a4eb8862846d3ca347
+  - enabled: 1
+    path: Assets/Scenes/Level01.unity
+    guid: 09fb7713c340013409582309488c2639
+  - enabled: 1
+    path: Assets/Scenes/Level02.unity
+    guid: ed9192c5494b2ec48b76d85a28dfa803
+  - enabled: 1
+    path: Assets/Scenes/Level04.unity
+    guid: 2d8b6934e3ead684ca002dfc0326db18
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 7cc1e3598e57f1e4188f1f5ef93e3994
+  - enabled: 1
+    path: Assets/Scenes/NewEndingScene.unity
+    guid: 1ae89204396b2db4e920e47840a06613
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 90812a6301fb74a45865b30e1e4888bd
   m_configObjects: {}
